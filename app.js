@@ -37,6 +37,7 @@ const displayTemp = data => {
     document.getElementById('low-temp').innerText = (temp_min - 273.15).toFixed(2);
     document.getElementById('weather').innerText = status;
 
+
     // condition & changing the icon
     const atmosphere = document.getElementById('weather').innerText;
 
@@ -44,7 +45,7 @@ const displayTemp = data => {
         document.getElementById('image').remove();
         const weatherStatus = document.getElementById('status')
         weatherStatus.innerHTML =
-            `<i class="fas fa-cloud-sun icon"></i>`
+            `<i class="fas fa-cloud-sun icon" style="font-size: 4rem"></i>`
     }
 
 }
