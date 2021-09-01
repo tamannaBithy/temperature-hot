@@ -17,6 +17,10 @@
             background-size: cover;
             height: 100vh;
         }
+
+        .spinnerClass {
+            display: none;
+        }
     </style>
 </head>
 
@@ -31,6 +35,15 @@
                 </div>
             </div>
         </form>
+
+        <!-- spinner -->
+        <div class="d-flex justify-content-center my-1 ">
+            <div class="spinner-border spinnerClass" role="status" id="spinner">
+                <span class="visually-hidden"></span>
+            </div>
+        </div>
+
+
         <div class="weather-status text-white text-center">
             <div id="status">
                 <img id="image" src="https://openweathermap.org/img/wn/02d@2x.png" alt="">
@@ -43,6 +56,8 @@
             </div>
             <h2 id="weather">Weather Status</h2>
         </div>
+
+
     </div>
 
     <script src="app.js"></script>
